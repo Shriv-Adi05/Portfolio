@@ -35,3 +35,13 @@ function reveal() {
 
 window.addEventListener('scroll', reveal);
 reveal();
+function sendEmail(e) {
+  e.preventDefault();
+
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
+
+  window.location.href =
+    `mailto:your-email@gmail.com?subject=Message from ${name}&body=${encodeURIComponent(message + "\n\nEmail: " + email)}`;
+}

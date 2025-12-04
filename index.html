@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <title>Adi's Portfolio</title>
@@ -9,13 +10,15 @@
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
 
   <!-- GOOGLE FONTS -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
 
   <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
   <!-- FAVICON -->
   <link rel="icon" type="image/png" href="react.png" />
 </head>
+
 <body>
 
   <!-- NAVBAR -->
@@ -49,15 +52,15 @@
       <div class="featured-text">
         <span class="tag">Hello!</span>
 
-        <h1>I'm a <span class="typedtext"></span></h1>
+        <h1 class="h1">I'm a <span class="typedtext"></span></h1>
 
-        <p>
+        <p class="p">
           I’m a passionate coder & DSA Learner with expertise in web development and software engineering.
           I like building modern, scalable, and user-friendly applications.
         </p>
 
         <div class="featured-text-btn">
-          <button class="btn">Hire Me</button>
+          <a href="https://www.linkedin.com/in/adishrivastava/"><button class="btn">Hire Me</button></a>
           <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
         </div>
 
@@ -77,13 +80,24 @@
 
     <!-- ABOUT -->
     <section class="about-section" id="about">
-
       <h2 class="section-title underline">About Me</h2>
-      <p class="about-text">
-        I am a dedicated Computer Science student pursuing dual degrees in Data Science and Artificial Intelligence.
-        Passionate about problem-solving, DSA, web development, and building scalable applications.
-      </p>
+
+      <div class="about-text-wrapper">
+        <h2 class="about-heading">Hello! I'm Adi ✨</h2>
+
+        <p class="about-text">
+          A BS Student at Indian Institute of Technology Madras 📚 pursuing my degree alongside a Bachelor of Technology
+          in Computer Science from IIST Indore.<br>
+
+          I'm a Computer Science engineering student with a strong passion for Data Structures and Competitive Coding.<br>
+          I enjoy building Machine Learning projects that bring ideas into real-life execution.
+
+          Currently Learning & Proficient in Python, MySQL, HTML, CSS, & Django.
+          Always eager to learn, explore new opportunities, and connect ⚡ to grow together.
+        </p>
+      </div>
     </section>
+
 
     <!-- EDUCATION -->
     <section class="education-section" id="education">
@@ -124,7 +138,7 @@
         <!-- IPS -->
         <div class="timeline-item reveal">
           <div class="timeline-dot">
-    
+
           </div>
 
           <div class="timeline-card">
@@ -149,7 +163,7 @@
         <div class="project-card reveal">
           <h3>Portfolio Website</h3>
           <p>A modern responsive portfolio built using HTML, CSS & JS.</p>
-          <a href="#" class="project-btn">View Project</a>
+          <a href="https://github.com/Shriv-Adi05/shriv-adi05.github.io" class="project-btn">View Project</a>
         </div>
 
         <div class="project-card reveal">
@@ -166,6 +180,43 @@
 
       </div>
     </section>
+    <!-- CONTACT / REACH OUT SECTION -->
+    <section class="contact-section" id="contact">
+      <h2 class="section-title underline">Reach Out to Me</h2>
+
+      <p class="contact-subtext">
+        Whether you have a question, a project idea, or just want to say hi — feel free to reach out!
+      </p>
+
+      <div class="contact-container reveal">
+
+        <!-- Contact Form -->
+        <form class="contact-form" onsubmit="sendEmail(event)">
+          <input type="text" id="name" placeholder="Your Name" required />
+          <input type="email" id="email" placeholder="Your Email" required />
+          <textarea id="message" placeholder="Your Message" required></textarea>
+          <button class="btn" type="submit">Send Message</button>
+        </form>
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <h3>Connect With Me</h3>
+
+          <div class="contact-icons">
+            <a href="https://www.linkedin.com/in/adishrivastava/" target="_blank"><i class="uil uil-linkedin"></i></a>
+            <a href="https://github.com/Shriv-Adi05" target="_blank"><i class="uil uil-github"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="uil uil-instagram"></i></a>
+            <a href="mailto:your-email@gmail.com"><i class="uil uil-envelope"></i></a>
+          </div>
+
+          <a href="shrivadi0405@gmail.com" class="email-btn">
+            <i class="uil uil-envelope"></i> Email Me Directly
+          </a>
+        </div>
+
+      </div>
+    </section>
+
 
   </main>
 
@@ -175,4 +226,8 @@
   <script src="script.js"></script>
 
 </body>
+<footer class="footer">
+  <h2>Made with 💖 by Adi.</h2><br>
+  <h3>Copyright @2025 All Rights Reserved</h3>
+</footer>
 </html>
